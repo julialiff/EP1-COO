@@ -1,5 +1,4 @@
 public class Usuario {
+	int    id;
 	String nome;
-	String atividade;
-	String turma;
 }
