@@ -4,5 +4,7 @@ public class Turma {
 	String inicio;
 	String fim;
 	int qtd;
-	String local;
+	Atividade atividade;
+	Usuario [] usuario;
+	Local local;
 }
