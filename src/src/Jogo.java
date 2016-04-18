@@ -22,7 +22,11 @@ public class Jogo {
 		turmas = t.criarTurma(turmas, 2, 5, 20, "seg", 12, 14, volei, l);
 		
 		t.matricula(turmas[0], fulano);
-		System.out.println(turmas[0].usuario[0].nome);		
+		System.out.println(turmas[0].usuario[0].nome);
+		
+		System.out.println("Calendário");
+		Calendario c = new Calendario();
+		c.calendario(turmas, l);
 	}
 
 }
