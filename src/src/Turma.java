@@ -8,10 +8,10 @@ public class Turma {
 	int fim;
 	int qtd;
 	Atividade atividade;
-	Usuario usuario[] = new Usuario[10];
+	Usuario usuario[] = new Usuario[100];
 	Local local;
 	
-	public Turma[] criarTurma(Turma[] turmas, int id, int duracao, String diaSemana, int inicio, int fim, Atividade atividade, Local local){
+	public Turma[] criarTurma(Turma[] turmas, int id, int qtd, int duracao, String diaSemana, int inicio, int fim, Atividade atividade, Local local){
 		if(turmas[0] == null){
 			Turma t = new Turma();
 			t.id = id;
@@ -19,7 +19,7 @@ public class Turma {
 			t.diaSemana = diaSemana;
 			t.inicio = inicio;
 			t.fim = fim;
-			t.qtd = 0;
+			t.qtd = qtd;
 			t.atividade = atividade; 
 			t.local = local;
 			turmas[0] = t;
@@ -54,11 +54,15 @@ public class Turma {
 	};
 	
 	public boolean matricula(Turma turma, Usuario usuario){
-		if(turma.qtd == 10){
+		int i = 0;
+		while(turma.usuario[i] != null){
+			i++;
+			System.out.println(i);
+		}
+		if(i == turma.qtd){
 			return false;
 		}
-		turma.usuario[qtd] = usuario;
-		turma.qtd++;
+		turma.usuario[i] = usuario;
 		return true;
 	}
 }

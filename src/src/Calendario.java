@@ -1,5 +1,6 @@
 package src;
 public class Calendario {
-	String horario;
-	Turma turma;
+	public void calendario(Turma[] turmas){
+		//for(int i=)
+	}
 }
