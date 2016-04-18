@@ -1,3 +1,4 @@
+package src;
 public class Turma {
 	int duracao;
 	String inicio;
