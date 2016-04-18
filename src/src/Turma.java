@@ -57,7 +57,7 @@ public class Turma {
 		if(turma.qtd == 10){
 			return false;
 		}
-		turma.usuario[turma.usuario.length] = usuario;
+		turma.usuario[qtd] = usuario;
 		turma.qtd++;
 		return true;
 	}

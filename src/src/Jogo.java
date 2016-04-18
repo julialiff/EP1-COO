@@ -18,28 +18,19 @@ public class Jogo {
 		Local l = new Local();
 		l.id = 1;
 		l.modalidade = "Físico";
-		System.out.println(l.tipo);
+		System.out.println(l.modalidade);
 		
 		Turma t = new Turma();
 		turmas = t.criarTurma(turmas, 1, 5, "seg", 10, 12, volei, l);
 		turmas = t.criarTurma(turmas, 2, 5, "seg", 12, 14, volei, l);
 		System.out.println(turmas);
 		System.out.println(turmas[0]);
-		System.out.println(turmas[0].diaSemana);
-		System.out.println(turmas[1].diaSemana);
+		System.out.println(turmas[0].qtd);
 		
-//		Turma t = new Turma();
-//		t.duracao = 2;
-//		t.inicio = 10;
-//		t.fim = 12;
-//		t.qtd = 1;
-//		t.atividade = volei;
-//		t.usuario[0] = fulano;
-//		t.usuario = new Usuario[1];
-//		t.usuario[0] = fulano;
-//		t.local = l;
-//		System.out.println();
-//		System.out.println(t.usuario[0].nome);
+		t.matricula(turmas[0], fulano);
+		System.out.println(turmas[0].usuario[0].nome);
+		
+		
 	}
 
 }
