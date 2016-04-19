@@ -19,7 +19,7 @@ public class Jogo {
 		
 		Turma t = new Turma();
 		turmas = t.criarTurma(turmas, 1, 5, 10, "seg", 10, 12, volei, l);
-		turmas = t.criarTurma(turmas, 2, 5, 20, "seg", 12, 14, volei, l);
+		turmas = t.criarTurma(turmas, 2, 5, 20, "qui", 18, 20, volei, l);
 		
 		t.matricula(turmas[0], fulano);
 		System.out.println(turmas[0].usuario[0].nome);
